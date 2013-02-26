@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Fresh practice to make css more easier</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="//netdna.impressjscdn.com/impressjs/0.5.3/css/impress-demo.css" rel="stylesheet" />
+    
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+         <q>Do you have a plan?</q>
+         <ol>
+              <li>Your environment<li>
+	      <li>Text editor<li>
+	      <li>CSS Hat<li>
+              <li>SASS<li>
+              <li>Tweaks<li>
+              <li>CSS 3 animation<li>
+         </ol>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+         <q>Which kind of OS do you prefer?</q>
+         <ol>
+              <li>Windows<li>
+	      <li>Mac OS<li>
+              <li>Linux<li>
+         </ol>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+         <q>Which kind of text editors do you like?</q>
+         <ol>
+              <li>Sublime <li>
+	      <li>VIM<li>
+              <li>Notepad++<li>
+         </ol>
+    </div>
+
+    <div id="hat-1" class="step" data-x="-1000" data-y="1000" data-scale="1">
+         <q>How can you save your time?</q>
+         <h1>CSS Hat</h1>
+         <img src="http://tobiasahlin.com/wp-content/uploads/csshat1.jpg" />
+         <p>http://csshat.com/</p>
+         <p>How it works you can find <a href="http://designshack.net/articles/css/css-hat-a-magic-button-that-turns-photoshop-styles-into-css">here</a><p>
+    </div>
+
+    <div id="hat-2" class="step" data-x="-1000" data-y="2500" data-scale="2">
+         <img src="http://designshack.co.uk/wp-content/uploads/csshat-7.jpg" />
+    </div>
+
+    <div id="hat-3" class="step" data-x="-1000" data-y="4000" data-scale="3">
+         <img src="http://designshack.co.uk/wp-content/uploads/csshat-8.jpg" />
+    </div>
+    <div id="hat-4" class="step" data-x="-1000" data-y="5500" data-scale="4">
+         <img src="http://designshack.co.uk/wp-content/uploads/csshat-9.jpg" />
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="2">
+        <q>How to make CSS more intelligent?</q>
+        <h1>SASS</h1>
+        <p> http://sass-lang.com/ </p>
+        <img src="http://sass-lang.com/images/sass.gif" />
+    </div>
+
+    <div id="install" class="step" data-x="3500" data-y="900" data-z="900" data-rotate="180" data-rotate-x="30" data-scale="2">
+        <q>How to install it?</q>
+        <div style="background-color:white; border-radius: 10px; padding: 10px; border: 2px dashed red">
+            <code><b>gem</b> install sass</code>
+            <br>
+            <code><b>mv</b> style.css style.scss</code>
+            <br>
+            <code><b>sass</b> <i>--watch</i> style.scss:style.css</code>
+        </div>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="//netdna.impressjscdn.com/impressjs/0.5.3/js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
