@@ -51,6 +51,14 @@
          </ol>
     </div>
 
+    <div class="step slide" data-x="2000" data-y="-1500">
+         <q>Do you know about Hot Keys or you prefer ZEN Coding?</q>
+         <ol>
+              <li><a href="http://css-snippets.com/">Snippets</a><li>
+	      <li><a href="http://emmet.io/">Emmet</a><li>
+              <li>Do it the best <a href="http://hayakubundle.com/">Hayaku</a><li>
+         </ol>
+    </div>
     <div id="hat-1" class="step" data-x="-1000" data-y="-500" data-scale="1" data-rotate-x="-10">
          <q>How can you save your time?</q>
          <h1>CSS Hat</h1>
@@ -66,18 +74,18 @@
     <div id="hat-3" class="step" data-x="-150" data-y="2000" data-scale="3" data-rotate-x="-30">
          <img src="http://designshack.co.uk/wp-content/uploads/csshat-8.jpg" />
     </div>
-    <div id="hat-4" class="step" data-x="200" data-y="3800" data-scale="4" data-rotate-x="-40">
+    <div id="hat-4" class="step" data-x="200" data-y="3800" data-scale="2" data-rotate-x="-40">
          <img src="http://designshack.co.uk/wp-content/uploads/csshat-9.jpg" />
     </div>
 
-    <div id="big" class="step" data-x="1500" data-y="2100" data-rotate="180" data-scale="2">
+    <div id="sass" class="step" data-x="2000" data-y="4000" data-rotate="-45" data-scale="2">
         <q>How to make CSS more intelligent?</q>
         <h1>SASS</h1>
         <p> http://sass-lang.com/ </p>
         <img src="http://sass-lang.com/images/sass.gif" />
     </div>
 
-    <div id="install" class="step" data-x="1500" data-y="900" data-z="900" data-rotate="180" data-rotate-x="30" data-scale="2">
+    <div id="sass-install" class="step" data-x="4000" data-y="3000" data-z="900" data-rotate="-90" data-rotate-x="30" data-scale="3">
         <q>How to install it?</q>
         <div style="background-color:white; border-radius: 10px; padding: 10px; border: 2px dashed red">
             <code><b>gem</b> install sass</code>
@@ -86,6 +94,193 @@
             <br>
             <code><b>sass</b> <i>--watch</i> style.scss:style.css</code>
         </div>
+    </div>
+        
+    <div id="sass-example-1" class="step slide" data-x="5500" data-y="3000" data-z="1000" data-rotate="90" data-rotate-y="40" data-scale="1">
+        <pre style="font-size: 25px;">
+$page-width:    800px;
+$sidebar-width: 200px;
+$primary-color: #eeeeee;
+
+#contents {
+  width: $page-width;
+  #sidebar {
+    float: right;
+    width: $sidebar-width;
+  }
+  #main {
+    width: $page-width - $sidebar-width;
+    background: $primary-color;
+    h2 { color: blue; }
+  }
+}
+	</pre>
+    </div>
+
+    <div id="sass-example-2" class="step slide" data-x="6000" data-y="3000" data-z="500" data-rotate="90" data-rotate-y="40" data-scale="1">
+        <q>What we will have after?</q>
+        <pre>
+#contents {
+  width: 800px; }
+  #contents #sidebar {
+    float: right;
+    width: 200px; }
+  #contents #main {
+    width: 600px;
+    background: #eeeeee; }
+    #contents #main h2 {
+      color: blue; }
+	</pre>
+    </div>
+
+    <div id="sass-example-3" class="step slide" data-x="6500" data-y="3000" data-z="0" data-rotate="90" data-rotate-y="40" data-scale="1">
+        <q>Get me more features</q>
+        <pre>
+@import "my-icons/*.png";
+
+.actions {
+  .new    { @include my-icons-sprite(new);    }
+  .edit   { @include my-icons-sprite(edit);   }
+  .save   { @include my-icons-sprite(save);   }
+  .delete { @include my-icons-sprite(delete); }
+}
+	</pre>
+    </div>
+
+    <div id="sass-example-4" class="step slide" data-x="7000" data-y="3000" data-z="-500" data-rotate="90" data-rotate-y="40" data-scale="1">
+        <pre>
+.my-icons-sprite,
+.actions .new,
+.actions .edit,
+.actions .save,
+.actions .delete { 
+	background: url('/images/my-icons-s34fe0604ab.png') 
+			no-repeat; }
+
+.actions .new    { background-position: 0 -64px; }
+.actions .edit   { background-position: 0 -32px; }
+.actions .save   { background-position: 0 -96px; }
+.actions .delete { background-position: 0 0;     }
+	</pre>
+    </div>
+
+    <div id="animation-1" class="present step" data-x="2000" data-y="1200" data-scale="4">
+         <q>How will I do animations?</q>
+<style> 
+#unsupport_div,
+#transited_div,
+#animated_div
+{
+width:60px;
+height:40px;
+background:#92B901;
+color:#ffffff;
+position:relative;
+font-weight:bold;
+font-size:20px;
+padding:10px;
+line-height: 1em;
+border-radius:5px;
+-webkit-border-radius:5px;
+}
+#animated_div
+{
+animation:animated_div 5s infinite;
+-moz-animation:animated_div 5s infinite;
+-webkit-animation:animated_div 5s infinite;
+-o-animation:animated_div 5s infinite;
+}
+
+@keyframes animated_div
+{
+0%		{transform: rotate(0deg);left:0px;}
+25%		{transform: rotate(20deg);left:0px;}
+50%		{transform: rotate(0deg);left:500px;}
+55%		{transform: rotate(0deg);left:500px;}
+70%		{transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100%	{transform: rotate(-360deg);left:0px;}
+}
+
+@-webkit-keyframes animated_div
+{
+0%		{-webkit-transform: rotate(0deg);left:0px;}
+25%		{-webkit-transform: rotate(20deg);left:0px;}
+50%		{-webkit-transform: rotate(0deg);left:500px;}
+55%		{-webkit-transform: rotate(0deg);left:500px;}
+70%		{-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100%	{-webkit-transform: rotate(-360deg);left:0px;}
+}
+
+@-moz-keyframes animated_div
+{
+0%   {-moz-transform: rotate(0deg);left:0px;}
+25%  {-moz-transform: rotate(20deg);left:0px;}
+50%  {-moz-transform: rotate(0deg);left:500px;}
+55%  {-moz-transform: rotate(0deg);left:500px;}
+70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {-moz-transform: rotate(-360deg);left:0px;}
+}
+
+@-o-keyframes animated_div
+{
+0%   {transform: rotate(0deg);left:0px;}
+25%  {transform: rotate(20deg);left:0px;}
+50%  {transform: rotate(0deg);left:500px;}
+55%  {transform: rotate(0deg);left:500px;}
+70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {transform: rotate(-360deg);left:0px;}
+}
+#unsupport_div,
+#transited_div{
+position: absolute;
+left:80px;
+top:210px;
+}
+#unsupport_div:hover,
+#transited_div:hover{
+left:70px;
+top:200px;
+position: absolute;
+width:60px;
+margin:0px;
+height:40px;
+background:#1ec7e6;
+color:#000;
+padding:20px;
+border-radius:5px;
+-webkit-border-radius:5px;
+}
+#unsupport_div{
+left:280px;
+top:210px;
+}
+#unsupport_div:hover {
+left:270px;
+top:200px;
+}
+#transited_div{
+-webkit-transition:	all .3s ease-in;
+-moz-transition:	all .3s ease-in;
+-o-transition:		all .3s ease-in;
+-ms-transition:		all .3s ease-in;
+transition:		all .3s ease-in; 
+}
+</style>
+	 <div id="animated_div">CSS3<br><span style="font-size:10px;">Animation</span></div>
+	 <div id="transited_div">CSS3<br><span style="font-size:10px;">Transition</span></div>
+	 <div id="unsupport_div">CSS3<br><span style="font-size:10px;">unsupport</span></div>
+    </div>
+
+    <div id="animation-2" class="present step" data-x="1300" data-y="-200" data-rotate-y="20" data-scale="3">
+         <q>Where I can use it?</q>
+         <a href="http://webdesigntutsplus.s3.amazonaws.com/tuts/322_ormans_form/index.html" class="rotating">Login forms!</a>
+         <br /><a href="http://tympanus.net/Tutorials/AnimatedButtons/index.html" class="rotating">Animated Buttons!</a>
+         <br /><a href="http://tympanus.net/Tutorials/CreativeCSS3AnimationMenus/index6.html" class="rotating">Animated menus!</a>
+    </div>
+
+    <div id="animation-and-js" class="present step" data-x="4000" data-y="-200" data-rotate-y="-20" data-scale="4">
+         <q>JS and CSS3 animation&transition?</q>
+         <a href="http://www.kirupa.com/snippets/examples/move_to_click_position.htm">Click and move</a>
     </div>
 
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
